@@ -1,0 +1,125 @@
+*, html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'ROBOTO MONO', sans-serif;
+}
+
+:root {
+    --bg-primary: rgb(48, 97, 221);
+    --bg-secondary: rgb(235, 237, 232);
+    --txt-primary: white;
+    --txt-secondary: black;
+    --icons-bg-primary: rgb(87, 100, 241);
+    --icons-bg-secondary: red;
+}
+
+.container {
+    width: 100%;
+    height: auto;
+    display: block;
+    min-height: 100vh;
+    background: var(--bg-primary);
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 40%;
+    border: 1px solid rgb(255, 255, 255);
+    background-color: var(--bg-secondary);
+    color: var(--txt-secondary);
+    padding: 2rem;
+    margin: 10px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.title {
+    font-size: 2rem;
+}
+
+.icons {
+    margin-top: 4px;
+    font-size: 24px;
+    color: var(--icons-bg-primary)
+}
+
+.deskripsi {
+    font-family: 'poppins';
+    margin-top: 8px;
+    font-size: 1rem;
+}
+
+.btn {
+    margin-top: 16px;
+    padding: 8px;
+    cursor: pointer;
+    border: none;
+    width: 100%;
+    background-color: var(--bg-secondary);
+}
+
+.btn:hover {
+    background-color: var(--bg-primary);
+    color: var(--txt-primary);
+    transform: rotate(2deg);
+    transition: 0.3s ease-in-out;
+}
+
+.container-2 {
+    display: none;
+}
+
+@media screen and (max-width: 576px){
+    .container {
+        background-color: var(--bg-secondary);
+    }
+    
+
+    .card {
+        background-color: var(--bg-primary);
+        width: 95%;
+    }
+
+    .title {
+        font-size: 3em;
+        color: white;
+    }
+
+    .deskripsi {
+        font-size: 2em;
+        color: white;
+    }
+
+    .icons {
+        font-size: 2rem;
+        color: white;
+    }
+    
+    .btn {
+        padding: 16px;
+        border-radius: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1400px) {
+    .container {
+        display: none;
+    }
+
+    .container-2 {
+        justify-content: center;
+        align-items: center;
+        display: block;
+    }
+
+}

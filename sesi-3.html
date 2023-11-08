@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Semester 2 - Sesi 3 & 4</title>
+    <link rel="shortcut icon" href="..." type="image/x-icon" />
+    <link rel="stylesheet" href="style/sesi-3.css" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+  </head>
+  <body>
+    <header class="animate__animated animate__backInDown animate__faster">
+        <div class="logo animate__animated animate__tada animate__infinite">
+            <img src="asset/icons/bmath.png" alt="" class="logo-img">
+            <h1 class="logo-title">ARD X</h1>
+        </div>
+      <nav>
+        <ul>
+          <li><a href="#hour">HOUR</a></li>
+          <li><a href="#price">PRICE</a></li>
+          <li><a href="#service">SERVICE</a></li>
+          <li><a href="mailto:lazuardisastra21@gmail.com">CONTACT</a></li>
+        </ul>
+      </nav>
+      <button class="btn-cta" onclick="redirInstagram()">Follow Me</button>
+    </header>
+
+    <div class="container ">
+      <div class="intro">
+        <p class="title animate__animated animate__backInLeft">Hello Semuanya! I am student</p>
+        <p class="description animate__animated animate__backInRight">Math Teacher</p>
+        <img src="asset/icons/character.png" alt="Teacher" class="img-foto" />
+      </div>
+    </div>
+
+    <div class="parallax">
+      <div class="tentang">
+        <p class="title">Saya Programer</p>
+        <p class="description">Math Teacher & Programer</p>
+        <div class="mt-10">
+          <button class="btn-cta" onclick="redirWhatsapp()">Contact Me</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="card">
+          <div class="card-item animate__animated animate__tada">
+            <img src="asset/icons/24-hours.png" alt="icons-1" class="icon" />
+            <p class="card-title" id="hour">Work Hour</p>
+            <p class="card-description">24 Hour</p>
+          </div>
+          <div class="card-item animate__animated animate__jello">
+            <img src="asset/icons/hot-deal.png" alt="icons-2" class="icon" />
+            <p class="card-title" id="price">Price</p>
+            <p class="card-description">Discount Always</p>
+          </div>
+          <div class="card-item animate__animated animate__heartBeat">
+            <img src="asset/icons/wrench.png" alt="icons-3" class="icon" />
+            <p class="card-title" id="service">Service</p>
+            <p class="card-description">All About For You</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+        <p class="title">&copy; Lazuardi Sastra 2023</p>
+    </footer>
+
+    <script>
+        function redirInstagram() {
+            window.location.href = "https://instagram.com/lazuardisastra"
+        }
+
+        function redirWhatsapp() {
+            window.location.href = "https://wa.me/+6287888027821"
+        }
+    </script>
+  </body>
+</html>
